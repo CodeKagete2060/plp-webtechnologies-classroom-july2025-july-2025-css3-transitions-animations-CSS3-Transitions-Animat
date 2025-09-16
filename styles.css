@@ -1,0 +1,60 @@
+/*----Global styles----*/
+body {
+    font-family: Arial, Sans-serif;
+    text-align: center;
+    margin: 40px;
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#msgBtn {
+    background-color: lightgreen;
+}
+
+#animateBox {
+    background-color: bisque;
+}
+
+.hoverBtwn {
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hoverBtwn:hover {
+    background-color: #2ecc71;
+    transform: scale(1.1)
+}
+
+#box {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    background-color: tomato;
+    border-radius: 12px;
+}
+
+@keyframes slideandfade {
+    0% { transform:translateY(0); opacity: 1;}
+    50% { transform:translateY(-100px); opacity: 0.5;}
+    100% { transform:translateY(0); opacity:1;}
+}
+
+/* Hidden by default — JS will add this */
+.animate {
+  animation: slideandfade 5s ease-in-out forwards;
+}
